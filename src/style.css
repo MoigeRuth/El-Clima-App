@@ -67,8 +67,8 @@ a {
   display: flex;
 }
 .app-temperature {
-  font-size: 88px;
-  font-weight: 600;
+  font-size: 78px;
+  font-weight: 400;
   margin-left: 10px;
 }
 .icon {
