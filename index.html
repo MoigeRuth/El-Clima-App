@@ -15,12 +15,13 @@
   <body>
     <div class="app">
       <header>
-        <form>
+        <form class="search-form-area" id="search-form-area">
           <input
             type="search"
             placeholder="Enter a City..."
             required
             class="search-form"
+            id="search-form"
           />
           <input type="submit" value="search" class="search-input" />
         </form>
@@ -28,7 +29,7 @@
       <main>
         <div class="app-data">
           <div>
-            <h1 class="app-city">Nairobi</h1>
+            <h1 class="app-city" id="app-city">Nairobi</h1>
             <p class="city-weather">
               Teusday 14:49, Scattered Clouds
               <br />
@@ -53,5 +54,6 @@
         <a href="https://el-clima-app.vercel.app/" target="_blank">Vercel</a>
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
