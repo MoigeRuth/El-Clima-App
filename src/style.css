@@ -9,7 +9,7 @@ header {
 }
 
 main {
-  padding: 30px 0;
+  padding: 40px 0;
 }
 a {
   color: #7a1cac;
@@ -79,6 +79,29 @@ a {
 .temperature-unit {
   font-size: 20px;
   margin-top: 20px;
+}
+
+.weather-forecast-date {
+  text-align: center;
+  font-size: 16;
+  color: rgb(173, 73, 228, 0.7);
+  line-height: 20px;
+  margin-bottom: 7px;
+}
+
+.weather-forecast-icon {
+  font-size: 35px;
+  text-align: center;
+}
+.weather-forecast-temperatures {
+  text-align: center;
+  color: #e26ee5;
+  margin-top: 7px;
+  display: flex;
+  justify-content: center;
+}
+.weather-forecast-temperature {
+  padding: 0 7px;
 }
 
 footer {
