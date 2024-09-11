@@ -21,6 +21,8 @@ function refreshWeather(response) {
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windSpeedElement.innerHTML = `${response.data.wind.speed}Km/h`;
   temperatureElement.innerHTML = Math.round(temperature);
+
+  getForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -57,7 +59,13 @@ function handleSearchSubmit(event) {
   searchCity(searchInput.value);
 }
 
-function displayForecast() {
+function getForecast(city) {
+  let apiKey = "fac6b53013d70a3f4td35cdffa8c4oea";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
   let days = ["Teu", "Wed", "Thur", "Fri", "Sat"];
   let forecastHtml = "";
 
@@ -85,4 +93,3 @@ let searchFormElement = document.querySelector("#search-form-area");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Nairobi");
-displayForecast();
