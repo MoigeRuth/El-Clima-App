@@ -90,7 +90,7 @@ a {
 .weather-forecast-date {
   text-align: center;
   font-size: 16;
-  color: rgb(173, 73, 228, 0.7);
+  color: rgba(179, 53, 247, 0.7);
   line-height: 20px;
   margin-bottom: 7px;
 }
